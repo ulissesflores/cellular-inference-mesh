@@ -179,11 +179,15 @@ def main() -> None:
         "orcid": __orcid__,
         "license": __license__,
         "version": _PACKAGE_VERSION,
-        "doi_external": None,
-        "external_repo_url": None,
+        # Public deposit metadata (set after operator-authorized publication
+        # on 2026-05-10; Concept DOI auto-routes to the latest version).
+        "doi_external": "10.5281/zenodo.20108648",
+        "external_repo_url": "https://github.com/ulissesflores/cellular-inference-mesh",
         "publication_status": (
-            "local-only — explicit operator authorization is required for "
-            "publication on Zenodo, public GitHub, or any external repository."
+            "published — Zenodo Concept DOI 10.5281/zenodo.20108648 "
+            "(Version DOI 10.5281/zenodo.20109260 for v0.3.2); "
+            "GitHub https://github.com/ulissesflores/cellular-inference-mesh; "
+            "Apache-2.0; deposited 2026-05-10."
         ),
         "timestamp_utc": datetime.now(UTC).isoformat(),
         "seed_canonical": 42,
