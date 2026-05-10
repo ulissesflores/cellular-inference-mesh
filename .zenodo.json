@@ -2,7 +2,7 @@
   "upload_type": "software",
   "title": "Cellular Inference Mesh: Salabim DES of edge-cloud LLM inference under PACELC saturation",
   "version": "0.3.0",
-  "description": "Discrete-event simulation in Salabim of the Cellular Inference Mesh edge-cloud architecture for industrial multilingual AGV voice command processing under PACELC. Implements 300 Monte-Carlo replicates × 3 scenarios × 2 arms × 1800 simulated seconds, with parametric variation per replicate over realistic operational ranges. Verifies Theorem (Pareto-efficiency over 5 axes against 256 sub-compositions and 7 external architectures) and articulates the Saturated Pipeline Conjecture (Flores, 2026) explaining structural insensitivity of percentile-99 latency to fallback-rate reductions under edge saturation. Reproducibility guaranteed via SHA-256 hash chain, seed_canonical=42, 53 pytest tests with bit-parity.",
+  "description": "Discrete-event simulation in Salabim of the Cellular Inference Mesh edge-cloud architecture for industrial multilingual AGV voice command processing under PACELC. Implements 300 Monte-Carlo replicates over 3 scenarios and 2 arms for 1800 simulated seconds, with parametric variation per replicate over realistic operational ranges. Verifies the Pareto-Efficiency Theorem (over 5 axes against 256 sub-compositions and 7 external architectures) and articulates the Saturated Pipeline Conjecture, which explains the structural insensitivity of percentile-99 latency to fallback-rate reductions under edge saturation. Reproducibility guaranteed via SHA-256 hash chain, seed_canonical=42, 53 pytest tests with bit-parity.",
   "creators": [
     {
       "name": "Flores, Carlos Ulisses",
@@ -26,18 +26,7 @@
     "FAIR research software",
     "reproducibility"
   ],
-  "communities": [
-    {"identifier": "fair-research-software"}
-  ],
-  "related_identifiers": [
-    {
-      "identifier": "PLACEHOLDER_PAPER_DOI",
-      "relation": "isSupplementTo",
-      "resource_type": "publication-article",
-      "scheme": "doi"
-    }
-  ],
   "language": "eng",
-  "publication_date": "2026-05-09",
-  "notes": "Bit-parity verified: shasum -a 256 output/results.json must equal 1f1e5a121177e8d3963b3599c2d6d9a4a5842b4eeb689cc259136d0a8d6c55f8. See docs/hash-chain.md for the complete SHA-256 audit trail."
+  "publication_date": "2026-05-10",
+  "notes": "Bit-parity verified: re-execution under seed_canonical=42 produces SHA-256 hashes identical to docs/hash-chain.md. See test_reproducibility for the cross-check."
 }
