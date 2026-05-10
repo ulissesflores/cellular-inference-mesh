@@ -42,7 +42,7 @@ __license__ = "Apache-2.0"
 
 import itertools
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import numpy as np
@@ -327,7 +327,7 @@ def main() -> None:
     # Persist result to JSON
     result = {
         "theorem": "Theorem - Pareto-optimality of the Cellular Inference Mesh composition",
-        "verification_date": datetime.now(timezone.utc).isoformat(),
+        "verification_date": datetime.now(UTC).isoformat(),
         "n_techniques": n,
         "n_subsets_enumerated": len(all_subsets),
         "n_subsets_valid": len(valid_subsets),

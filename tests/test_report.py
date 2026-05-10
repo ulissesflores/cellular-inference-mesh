@@ -12,14 +12,13 @@ re-running the simulation.
 from __future__ import annotations
 
 import json
-import os
 from pathlib import Path
 
 import matplotlib
+
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pytest
-
 
 CODE_DIR = Path(__file__).parent.parent
 OUTPUT = CODE_DIR / "output"
@@ -98,6 +97,7 @@ def test_load_raw_returns_list_of_dicts():
 def test_savefig_dpi_is_600():
     """rcParams['savefig.dpi'] is set to 600 (Layer B SOTA)."""
     import importlib
+
     import src.report
     importlib.reload(src.report)  # ensure fresh module-level rcParams
     assert plt.rcParams["savefig.dpi"] == 600
@@ -106,6 +106,7 @@ def test_savefig_dpi_is_600():
 def test_font_family_serif():
     """rcParams['font.family'] uses serif (Nature/Science aesthetic)."""
     import importlib
+
     import src.report
     importlib.reload(src.report)
     assert "serif" in plt.rcParams["font.family"]
@@ -114,6 +115,7 @@ def test_font_family_serif():
 def test_text_usetex_disabled():
     """text.usetex=False (sistema sem LaTeX; mathtext interno)."""
     import importlib
+
     import src.report
     importlib.reload(src.report)
     assert plt.rcParams["text.usetex"] is False
@@ -122,6 +124,7 @@ def test_text_usetex_disabled():
 def test_axes_grid_enabled():
     """axes.grid=True (rubrica v3.0 SOTA)."""
     import importlib
+
     import src.report
     importlib.reload(src.report)
     assert plt.rcParams["axes.grid"] is True
@@ -130,6 +133,7 @@ def test_axes_grid_enabled():
 def test_lines_linewidth_consistent():
     """lines.linewidth=1.4 — Nature/IEEE column width."""
     import importlib
+
     import src.report
     importlib.reload(src.report)
     assert plt.rcParams["lines.linewidth"] == 1.4

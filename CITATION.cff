@@ -17,7 +17,7 @@ authors:
     given-names: "Carlos Ulisses"
     email: "c.ulisses@gmail.com"
     orcid: "https://orcid.org/0000-0002-6034-7765"
-version: "0.3.0"
+version: "0.3.2"
 date-released: "2026-05-10"
 license: "Apache-2.0"
 doi: "10.5281/zenodo.20108649"

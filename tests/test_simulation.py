@@ -2,10 +2,6 @@
 
 from __future__ import annotations
 
-import math
-
-import pytest
-
 from src.config import ExperimentConfig, little_law_check, speculative_speedup
 from src.simulation import run_replica
 

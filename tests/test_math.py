@@ -17,7 +17,6 @@ from src.config import (
     speculative_speedup,
 )
 
-
 # ---------- Speculative decoding (Leviathan, Kalman & Matias 2023) ----------
 
 def test_speculative_speedup_alpha_07_gamma_4_c_01():

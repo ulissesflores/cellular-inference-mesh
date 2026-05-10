@@ -41,7 +41,6 @@ import salabim as sb
 
 from .config import ExperimentConfig, speculative_speedup
 
-
 # ============================================================
 # Events
 # ============================================================

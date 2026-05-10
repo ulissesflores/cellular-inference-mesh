@@ -9,6 +9,6 @@ Roofline performance ceiling, and the Leviathan speculative-decoding
 speedup formula.
 """
 
-__version__ = "0.3.0"
+__version__ = "0.3.2"
 __author__ = "Carlos Ulisses Flores"
 __email__ = "c.ulisses@gmail.com"

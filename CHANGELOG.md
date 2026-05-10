@@ -2,6 +2,19 @@
 
 All notable changes to this project follow [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.2] — 2026-05-10
+
+### Fixed
+
+- `pyproject.toml`, `CITATION.cff`, `codemeta.json`, `.zenodo.json`, `src/__init__.py` and Docker/BibTeX references in `README.md` synchronized to `0.3.2` (previously stale at `0.3.0` despite v0.3.1 tag).
+- Ruff configuration tightened with `per-file-ignores` for legitimate scientific patterns (`L_edge`, `L_cloud`, `M`, `k` math variables; matplotlib chained calls; notebook import positions); `ruff check .` now passes with zero errors, unblocking the GitHub Actions CI pipeline.
+- `figs_math_diagrams.py` Figure 12 (decision tree) banner re-laid to avoid overlap with payload-decision blocks.
+- `README.md` reproducibility example references the dynamic SHA-256 chain in `docs/hash-chain.md` (no hard-coded hashes drift).
+
+## [0.3.1] — 2026-05-10
+
+- Zenodo DOI `10.5281/zenodo.20108649` integrated into `CITATION.cff`, `.zenodo.json`, `README.md` and `colab/replication.ipynb`.
+
 ## [0.3.0] — 2026-05-09
 
 > [!IMPORTANT]

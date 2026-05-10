@@ -28,7 +28,6 @@ from typing import Any
 from .config import ExperimentConfig
 from .simulation import run_replica
 
-
 SCENARIOS = ("nominal", "partition", "burst")
 ARMS = (False, True)  # baseline, proposed
 

@@ -36,7 +36,7 @@ import os
 import platform
 import subprocess
 import sys
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 # Resolve project root and ensure `src` is importable for `__version__`.
@@ -185,7 +185,7 @@ def main() -> None:
             "local-only — explicit operator authorization is required for "
             "publication on Zenodo, public GitHub, or any external repository."
         ),
-        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+        "timestamp_utc": datetime.now(UTC).isoformat(),
         "seed_canonical": 42,
         "git_commit_sha": git_commit_sha(),
         "package_versions": package_versions(),

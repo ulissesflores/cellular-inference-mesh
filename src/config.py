@@ -12,7 +12,7 @@ ORCID:  0000-0002-6034-7765
 License: Apache-2.0
 """
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Literal
 
 

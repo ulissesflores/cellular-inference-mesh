@@ -21,7 +21,7 @@ __orcid__ = "0000-0002-6034-7765"
 __license__ = "Apache-2.0"
 
 import json
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 
 import matplotlib.pyplot as plt
@@ -134,7 +134,7 @@ def main() -> None:
     # Persist JSON result
     result = {
         "theorem": "Saturated Pipeline Conjecture",
-        "data_generation": datetime.now(timezone.utc).isoformat(),
+        "data_generation": datetime.now(UTC).isoformat(),
         "model": "p99(L_total) ~ p_fb * p99(L_cloud) + (1-p_fb) * p99(L_edge)",
         "L_cloud_ms": L_cloud,
         "scenarios": [
@@ -173,7 +173,7 @@ def main() -> None:
     print("Saturated Pipeline Conjecture - numerical validation complete.")
     print(f"  Empirical Addverb: p_fb 0.30 -> 0.0407 (factor {p_fb_baseline/p_fb_proposed:.2f}x)")
     print(f"  p99: 1740 -> 1576 ms (factor {p99_baseline/p99_proposed:.2f}x)")
-    print(f"  Model predicts for L_edge/L_cloud=0.91, p_fb=0.30 -> 0.041:")
+    print("  Model predicts for L_edge/L_cloud=0.91, p_fb=0.30 -> 0.041:")
     L_edge_91 = 0.91 * L_cloud
     p99_pred_old = p99_total(np.array([0.30]), L_edge_91, L_cloud)[0]
     p99_pred_new = p99_total(np.array([0.041]), L_edge_91, L_cloud)[0]

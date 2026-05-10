@@ -161,9 +161,9 @@ def fig11_algorithm_1_flowchart() -> None:
 
 def fig12_decision_tree_payload_gating() -> None:
     """Payload-gating decision tree: Zippy 6 vs Zippy Tug, PACELC modes."""
-    fig, ax = plt.subplots(figsize=(8, 5))
+    fig, ax = plt.subplots(figsize=(8, 6))
     ax.set_xlim(0, 12)
-    ax.set_ylim(0, 8)
+    ax.set_ylim(-1.5, 8)
     ax.axis("off")
 
     nodes = [
@@ -201,10 +201,10 @@ def fig12_decision_tree_payload_gating() -> None:
     ax.text(4.0, 4.0, "no\n(60% queries)", fontsize=8, ha="center", style="italic")
     ax.text(8.0, 4.0, "yes\n(40% queries)", fontsize=8, ha="center", style="italic")
 
-    # PACELC banner
-    ax.text(6, 0.3, "PACELC operationalized:\nPA/EL for low criticality (Zippy 6) | PC/EC for high criticality (Zippy Tug)",
-            ha="center", fontsize=8, style="italic", color="dimgray",
-            bbox=dict(boxstyle="round,pad=0.3", fc="lightyellow", ec="dimgray"))
+    # PACELC banner — placed below the lowest decision row (y=1) with safe margin
+    ax.text(6, -0.7, "PACELC operationalized:\nPA/EL for low criticality (Zippy 6) | PC/EC for high criticality (Zippy Tug)",
+            ha="center", va="center", fontsize=8, style="italic", color="dimgray",
+            bbox={"boxstyle": "round,pad=0.4", "fc": "lightyellow", "ec": "dimgray"})
 
     ax.set_title("Payload-Gating Decision Tree under Zero Trust (Rose et al., 2020)\n"
                  "PACELC trade-off operationalized by AGV mass",

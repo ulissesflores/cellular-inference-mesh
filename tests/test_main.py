@@ -17,7 +17,7 @@ from pathlib import Path
 import pytest
 
 from src.config import ExperimentConfig
-from src.main import _replica_worker, aggregate, main, SCENARIOS, ARMS
+from src.main import ARMS, SCENARIOS, _replica_worker, aggregate
 
 
 def test_aggregate_single_replica():

@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "identifier": "https://github.com/ulissesflores/cellular-inference-mesh",
   "name": "cellular-inference-mesh",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Salabim discrete-event simulation of edge-cloud LLM inference under PACELC saturation. Companion software to the Saturated Pipeline Conjecture (Flores, 2026).",
   "license": "https://spdx.org/licenses/Apache-2.0",
   "codeRepository": "https://github.com/ulissesflores/cellular-inference-mesh",
@@ -41,6 +41,6 @@
   ],
   "datePublished": "2026-05-09",
   "dateModified": "2026-05-09",
-  "downloadUrl": "https://github.com/ulissesflores/cellular-inference-mesh/archive/refs/tags/v0.3.0.tar.gz",
+  "downloadUrl": "https://github.com/ulissesflores/cellular-inference-mesh/archive/refs/tags/v0.3.2.tar.gz",
   "readme": "https://github.com/ulissesflores/cellular-inference-mesh/blob/main/README.md"
 }

@@ -1,7 +1,7 @@
 {
   "upload_type": "software",
   "title": "Cellular Inference Mesh: Salabim DES of edge-cloud LLM inference under PACELC saturation",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "Discrete-event simulation in Salabim of the Cellular Inference Mesh edge-cloud architecture for industrial multilingual AGV voice command processing under PACELC. Implements 300 Monte-Carlo replicates over 3 scenarios and 2 arms for 1800 simulated seconds, with parametric variation per replicate over realistic operational ranges. Verifies the Pareto-Efficiency Theorem (over 5 axes against 256 sub-compositions and 7 external architectures) and articulates the Saturated Pipeline Conjecture, which explains the structural insensitivity of percentile-99 latency to fallback-rate reductions under edge saturation. Reproducibility guaranteed via SHA-256 hash chain, seed_canonical=42, 53 pytest tests with bit-parity.",
   "creators": [
     {
