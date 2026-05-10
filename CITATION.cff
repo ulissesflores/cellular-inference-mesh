@@ -1,0 +1,90 @@
+cff-version: 1.2.0
+message: "If you use this software in research, please cite it as below."
+title: "Cellular Inference Mesh: Salabim discrete-event simulation of edge-cloud LLM inference under PACELC saturation"
+abstract: >
+  Discrete-event simulation in Salabim of the Cellular Inference Mesh edge-cloud
+  architecture for industrial multilingual AGV voice command processing under PACELC.
+  Implements 300 Monte-Carlo replicates × 3 scenarios × 2 arms × 1800 simulated
+  seconds with parametric variation per replicate. Verifies the Theorem
+  (Pareto-efficiency over 5 axes against 256 sub-compositions and 7 external
+  architectures) and articulates the Saturated Pipeline Conjecture, which
+  explains the structural insensitivity of percentile-99 latency to fallback-rate
+  reductions under edge saturation. Reproducibility guaranteed via SHA-256 hash
+  chain and bit-parity tests.
+type: software
+authors:
+  - family-names: "Flores"
+    given-names: "Carlos Ulisses"
+    email: "c.ulisses@gmail.com"
+    orcid: "https://orcid.org/0000-0002-6034-7765"
+version: "0.3.0"
+date-released: "2026-05-10"
+license: "Apache-2.0"
+repository-code: "https://github.com/ulissesflores/cellular-inference-mesh"
+url: "https://github.com/ulissesflores/cellular-inference-mesh"
+keywords:
+  - "cellular inference mesh"
+  - "saturated pipeline conjecture"
+  - "PACELC"
+  - "edge-cloud LLM serving"
+  - "speculative decoding"
+  - "multilingual AGV"
+  - "LLMOps"
+  - "Mobile Edge Intelligence"
+  - "salabim"
+  - "discrete-event simulation"
+  - "FAIR research software"
+  - "reproducibility"
+references:
+  - type: article
+    authors:
+      - family-names: "Abadi"
+        given-names: "Daniel J."
+    title: "Consistency Tradeoffs in Modern Distributed Database System Design: CAP is Only Part of the Story"
+    journal: "IEEE Computer"
+    year: 2012
+    volume: 45
+    issue: 2
+    start: 37
+    end: 42
+    doi: "10.1109/MC.2012.33"
+  - type: article
+    authors:
+      - family-names: "Dean"
+        given-names: "Jeffrey"
+      - family-names: "Barroso"
+        given-names: "Luiz André"
+    title: "The Tail at Scale"
+    journal: "Communications of the ACM"
+    year: 2013
+    volume: 56
+    issue: 2
+    start: 74
+    end: 80
+    doi: "10.1145/2408776.2408794"
+  - type: conference-paper
+    authors:
+      - family-names: "Leviathan"
+        given-names: "Yaniv"
+      - family-names: "Kalman"
+        given-names: "Matan"
+      - family-names: "Matias"
+        given-names: "Yossi"
+    title: "Fast Inference from Transformers via Speculative Decoding"
+    conference:
+      name: "International Conference on Machine Learning (ICML 2023)"
+    year: 2023
+    url: "https://arxiv.org/abs/2211.17192"
+  - type: article
+    authors:
+      - family-names: "Wilkinson"
+        given-names: "Mark D."
+      - family-names: "Dumontier"
+        given-names: "Michel"
+      - family-names: "Aalbersberg"
+        given-names: "IJsbrand Jan"
+    title: "The FAIR Guiding Principles for scientific data management and stewardship"
+    journal: "Scientific Data"
+    year: 2016
+    volume: 3
+    doi: "10.1038/sdata.2016.18"

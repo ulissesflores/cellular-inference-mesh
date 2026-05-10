@@ -1,0 +1,14 @@
+# Exact pins for reproducibility (versions resolved on Python 3.14.4
+# and recorded in output/experiment_provenance.json). Do not relax these
+# pins without bumping the version in CHANGELOG.md and regenerating the
+# hash chain via `scripts/gen_provenance.py` + `scripts/regen_hash_chain.py`.
+salabim==26.0.5
+numpy==2.4.4
+scipy==1.17.1
+matplotlib==3.10.9
+seaborn==0.13.2
+networkx==3.6.1
+pandas==3.0.2
+pytest==9.0.3
+ruff==0.5.7
+scienceplots==2.2.1

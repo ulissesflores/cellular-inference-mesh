@@ -1,0 +1,46 @@
+{
+  "theorem": "Saturated Pipeline Conjecture",
+  "data_generation": "2026-05-10T07:56:26.959298+00:00",
+  "model": "p99(L_total) ~ p_fb * p99(L_cloud) + (1-p_fb) * p99(L_edge)",
+  "L_cloud_ms": 1740.0,
+  "scenarios": [
+    {
+      "label": "L_edge << L_cloud (unsaturated, ratio=0.1)",
+      "L_edge_ms": 174.0,
+      "p99_at_pfb_0": 174.0,
+      "p99_at_pfb_03": 643.8,
+      "p99_at_pfb_005": 252.29999999999998
+    },
+    {
+      "label": "L_edge ~ 1/2 L_cloud (partial, ratio=0.5)",
+      "L_edge_ms": 870.0,
+      "p99_at_pfb_0": 870.0,
+      "p99_at_pfb_03": 1131.0,
+      "p99_at_pfb_005": 913.5
+    },
+    {
+      "label": "L_edge ~ L_cloud (Addverb empirical, ratio=0.9)",
+      "L_edge_ms": 1583.4,
+      "p99_at_pfb_0": 1583.4,
+      "p99_at_pfb_03": 1630.3799999999999,
+      "p99_at_pfb_005": 1591.23
+    },
+    {
+      "label": "L_edge ~ L_cloud (full saturation, ratio=1.0)",
+      "L_edge_ms": 1740.0,
+      "p99_at_pfb_0": 1740.0,
+      "p99_at_pfb_03": 1740.0,
+      "p99_at_pfb_005": 1740.0
+    }
+  ],
+  "empirical_addverb": {
+    "p_fb_baseline": 0.3,
+    "p_fb_proposed": 0.0407,
+    "p99_baseline_ms": 1740.0,
+    "p99_proposed_ms": 1576.0,
+    "fallback_reduction_factor": 7.371007371007371,
+    "p99_reduction_factor": 1.1040609137055837,
+    "interpretation": "Fallback reduced 7.37x but p99 reduced only 1.10x - consistent with the Saturated Pipeline Conjecture for L_edge/L_cloud ~ 0.91 (Addverb edge path saturated by ASR + prefill + decoding of 50 tokens)."
+  },
+  "implication": "To reduce p99 under edge saturation the system must ACCELERATE L_edge (P4 in-network NLU, CXL pool, energy routing); reducing p_fb alone is insufficient."
+}

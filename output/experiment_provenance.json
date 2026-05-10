@@ -1,0 +1,276 @@
+{
+  "experiment": "Cellular Inference Mesh — Salabim discrete-event simulation",
+  "author": "Carlos Ulisses Flores",
+  "orcid": "0000-0002-6034-7765",
+  "license": "Apache-2.0",
+  "version": "0.3.0",
+  "doi_external": null,
+  "external_repo_url": null,
+  "publication_status": "local-only — explicit operator authorization is required for publication on Zenodo, public GitHub, or any external repository.",
+  "timestamp_utc": "2026-05-10T09:57:37.436251+00:00",
+  "seed_canonical": 42,
+  "git_commit_sha": "04132ce34abe7e4e06b7df6b401bb096c99d0a98",
+  "package_versions": {
+    "salabim": "26.0.5",
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.9",
+    "seaborn": "0.13.2",
+    "networkx": "3.6.1",
+    "pandas": "3.0.2",
+    "pytest": "9.0.3",
+    "ruff": "?"
+  },
+  "hardware": {
+    "platform": "macOS-26.5-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "processor": "arm",
+    "cpu_count": "14",
+    "python_implementation": "CPython",
+    "python_version": "3.14.4"
+  },
+  "source_files_sha256": {
+    "__init__.py": "853fa8a3a13864bd64ac0a28ab11dd5a8fde69bb8f5825b66674f08e0597b05c",
+    "config.py": "d5fc99d25b838243f6b8725ca099b53c86b3a23e9cfca81d6c549ff6e6b1691e",
+    "simulation.py": "df7a401787f7e4da16501e291035f46215ad68ce5759ad234192eaa1c19a4336",
+    "main.py": "cd4e1eecfdff63b1ed67f21ae03e9eeb3f8fae9f72b0e9578c095eedb28d89d6",
+    "report.py": "6a050ada6b1289d39004bef12d9668d9cefe7370fab8551c3d362c3658fd2dcc"
+  },
+  "results_sha256": "5fd8724c627cfa94c4631428cf085e64a9defa123d1d3cc488f61d81af8b5f2c",
+  "raw_replicas_sha256": "3a61144775eed7b173b2c8e9e751e8c2088013512085dd0bb2936cfce427cf5e",
+  "results_summary": {
+    "baseline__nominal": {
+      "n_replicas": 300,
+      "p50_ms": {
+        "mean": 1262.950780685174,
+        "std": 1.0065846038017725,
+        "ci95": 0.11390577082554887
+      },
+      "p95_ms": {
+        "mean": 1588.9752512349455,
+        "std": 2.4245824063946353,
+        "ci95": 0.27436732778085715
+      },
+      "p99_ms": {
+        "mean": 1740.0647949387453,
+        "std": 4.8813905901159425,
+        "ci95": 0.5523813455597365
+      },
+      "fallback_rate": {
+        "mean": 0.29950699131644265,
+        "std": 0.002372945309420244,
+        "ci95": 0.0002685240401805434
+      },
+      "cost_usd": {
+        "mean": 0.080848325,
+        "std": 0.000787316155877688,
+        "ci95": 8.90932101285316e-05
+      },
+      "energy_j": {
+        "mean": 456868.1103333333,
+        "std": 957.5627351593081,
+        "ci95": 108.35842417039544
+      }
+    },
+    "proposed__nominal": {
+      "n_replicas": 300,
+      "p50_ms": {
+        "mean": 1231.5842262559408,
+        "std": 1.0136976891890905,
+        "ci95": 0.11471069221112369
+      },
+      "p95_ms": {
+        "mean": 1451.8045700598577,
+        "std": 3.3713092520322836,
+        "ci95": 0.38149955561973364
+      },
+      "p99_ms": {
+        "mean": 1576.036305490116,
+        "std": 8.545519493516554,
+        "ci95": 0.9670165640696075
+      },
+      "fallback_rate": {
+        "mean": 0.04101255280799291,
+        "std": 0.0011285704745672331,
+        "ci95": 0.00012770977158900769
+      },
+      "cost_usd": {
+        "mean": 0.0040966495,
+        "std": 0.00011701843275069141,
+        "ci95": 1.324188223515692e-05
+      },
+      "energy_j": {
+        "mean": 450378.6116666667,
+        "std": 986.4728960015632,
+        "ci95": 111.62991684273533
+      }
+    },
+    "baseline__partition": {
+      "n_replicas": 300,
+      "p50_ms": {
+        "mean": 1263.1378461072156,
+        "std": 1.0629662830077478,
+        "ci95": 0.12028595844826773
+      },
+      "p95_ms": {
+        "mean": 1598.0781625529453,
+        "std": 2.528593927699392,
+        "ci95": 0.28613733942638536
+      },
+      "p99_ms": {
+        "mean": 1798.9325601406103,
+        "std": 9.45485084338572,
+        "ci95": 1.069917093196995
+      },
+      "fallback_rate": {
+        "mean": 0.29978445912692564,
+        "std": 0.0025734743766402455,
+        "ci95": 0.0002912160403247466
+      },
+      "cost_usd": {
+        "mean": 0.07955942499999999,
+        "std": 0.0008072725863282637,
+        "ci95": 9.135149282510156e-05
+      },
+      "energy_j": {
+        "mean": 456725.118,
+        "std": 1030.844638652919,
+        "ci95": 116.65105220531326
+      }
+    },
+    "proposed__partition": {
+      "n_replicas": 300,
+      "p50_ms": {
+        "mean": 1232.1185271887573,
+        "std": 1.0615551231405027,
+        "ci95": 0.12012627067653993
+      },
+      "p95_ms": {
+        "mean": 1454.465071633344,
+        "std": 3.7683764326334086,
+        "ci95": 0.426431936966593
+      },
+      "p99_ms": {
+        "mean": 1588.2085596056122,
+        "std": 9.690764392543151,
+        "ci95": 1.0966132244148534
+      },
+      "fallback_rate": {
+        "mean": 0.04092840927290909,
+        "std": 0.00101772672407678,
+        "ci95": 0.00011516662042901214
+      },
+      "cost_usd": {
+        "mean": 0.0040886355,
+        "std": 0.00010422640954305897,
+        "ci95": 1.179432853884524e-05
+      },
+      "energy_j": {
+        "mean": 450383.4193333333,
+        "std": 959.6302983220918,
+        "ci95": 108.59239096752098
+      }
+    },
+    "baseline__burst": {
+      "n_replicas": 300,
+      "p50_ms": {
+        "mean": 61379.06771376977,
+        "std": 3344.4171241893096,
+        "ci95": 378.45642487888597
+      },
+      "p95_ms": {
+        "mean": 153387.59423628592,
+        "std": 4783.15451509769,
+        "ci95": 541.264887185976
+      },
+      "p99_ms": {
+        "mean": 164892.49682777203,
+        "std": 5397.93331456099,
+        "ci95": 610.8336574369695
+      },
+      "fallback_rate": {
+        "mean": 0.2998337816260133,
+        "std": 0.0019952280869502126,
+        "ci95": 0.00022578131272669983
+      },
+      "cost_usd": {
+        "mean": 0.11735119999999999,
+        "std": 0.0013191602147733243,
+        "ci95": 0.00014927703100031016
+      },
+      "energy_j": {
+        "mean": 460952.77866666665,
+        "std": 123.12162004551209,
+        "ci95": 13.932522893362487
+      }
+    },
+    "proposed__burst": {
+      "n_replicas": 300,
+      "p50_ms": {
+        "mean": 180422.0521317268,
+        "std": 10387.664856102094,
+        "ci95": 1175.474935780743
+      },
+      "p95_ms": {
+        "mean": 291506.28950046044,
+        "std": 16410.267806323296,
+        "ci95": 1856.9966169491024
+      },
+      "p99_ms": {
+        "mean": 297426.97510965046,
+        "std": 15918.22146930006,
+        "ci95": 1801.316332262812
+      },
+      "fallback_rate": {
+        "mean": 0.042090113515000575,
+        "std": 0.001002144248986959,
+        "ci95": 0.00011340329737621339
+      },
+      "cost_usd": {
+        "mean": 0.005618699,
+        "std": 0.00013923692963523535,
+        "ci95": 1.5756141845983858e-05
+      },
+      "energy_j": {
+        "mean": 451417.094,
+        "std": 34.78256055933074,
+        "ci95": 3.936017257598676
+      }
+    }
+  },
+  "validation": {
+    "little_law_check": "L = λW empirically validated with error < 1e-9 in nominal scenarios.",
+    "speculative_speedup_canonical": "α=0.9, γ=8, c=0.05 → 4.38× (test_speculative_speedup_alpha_09_gamma_8_c_005).",
+    "blast_radius_combinatorial": "M=8, k=2 → 3.57% (test_blast_radius_combinatorial_m8_k2).",
+    "kv_cache_composition": "MLA + sliding 128 + CLA-2 → ~38× reduction (test_kv_cache_proposed_full_composition)."
+  },
+  "honest_findings": {
+    "fallback_rate_reduction": "30.02% → 4.10% ≈ 7.3× (within the [5×, 10×] analytical bound).",
+    "cost_per_command_reduction": "$0.0809 → $0.00410 ≈ 19.7× (within the [7×, 32×] analytical bound).",
+    "p99_latency_reduction_nominal": "1740 ms → 1576 ms ≈ 1.1× (modest; explained by the Saturated Pipeline Conjecture in docs/saturated-pipeline-conjecture.md).",
+    "p99_latency_under_burst": "165 s → 296 s — both arms saturate under 10× burst; quantitative comparison only valid under nominal and partition scenarios.",
+    "calibration_caveat": "Observed mean residence time W ≈ 1.29 s (vs initial estimate W = 0.25 s); observed in-flight L ≈ 25.8 (vs estimate L = 5.0). Little's Law remains exact (error 0%); the initial calibration underestimated per-core throughput."
+  },
+  "references_canonical_papers": {
+    "PACELC": "Abadi (2012). DOI: 10.1109/MC.2012.33",
+    "Tail at Scale": "Dean & Barroso (2013). DOI: 10.1145/2408776.2408794",
+    "Speculative Decoding": "Leviathan, Kalman & Matias (2023). arXiv: 2211.17192",
+    "EAGLE-3": "Li et al. (2025). arXiv: 2503.01840",
+    "S-LoRA": "Sheng et al. (2024). arXiv: 2311.03285",
+    "Mooncake": "Qin et al. (2025). USENIX FAST 2025 Best Paper Award.",
+    "Splitwise": "Patel et al. (2024). DOI: 10.1109/ISCA59077.2024.00019",
+    "Shuffle Sharding": "MacCárthaigh (2019). AWS Builders' Library.",
+    "Zero Trust": "Rose et al. (2020). DOI: 10.6028/NIST.SP.800-207",
+    "MLA": "DeepSeek-AI (2024). arXiv: 2412.19437",
+    "CLA": "Brandon et al. (2024). arXiv: 2405.12981",
+    "OpenFedLLM": "Ye et al. (2024). DOI: 10.1145/3637528.3671582",
+    "vLLM": "Kwon et al. (2023). DOI: 10.1145/3600006.3613165",
+    "Sirius (P4)": "Gao et al. (2024). NSDI 2024.",
+    "CXL KV pool": "Tang et al. (2024). NeurIPS ML4Sys Workshop.",
+    "Beluga (CXL prod)": "Yang et al. (2026). DOI: 10.1145/3786627",
+    "TokenPowerBench": "Niu et al. (2025). arXiv: 2512.03024",
+    "Energy-per-token": "Wilhelm et al. (2025). DOI: 10.1145/3721146.3721953",
+    "FAIR Principles": "Wilkinson et al. (2016). DOI: 10.1038/sdata.2016.18",
+    "ZenML LLMOps": "ZenML (2025). LLMOps in Production case study database."
+  }
+}

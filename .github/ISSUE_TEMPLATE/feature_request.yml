@@ -1,0 +1,68 @@
+name: Feature request
+description: Propose a new analysis, theorem extension, simulation variant, or platform enabler.
+title: "[feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This software is a published scientific artifact. Feature requests that
+        would alter `output/results.json` bit-parity must be coherent with the
+        SHA-256 hash chain and CONTRIBUTING.md. New theorems / propositions
+        must include a formal statement and a proof sketch.
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What scientific question would this feature answer? Cite the relevant paper section or docs/proofs.md proposition.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: One paragraph describing the change. For new simulation arms, name the new `--scenario` or `--arm` flag and the parameter ranges.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - New simulation scenario or arm
+        - New theorem or proposition
+        - New external architecture comparison (Theorem extended)
+        - Reproducibility / FAIR improvement
+        - Documentation
+        - Tooling / CI
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Expected impact on outputs and the hash chain
+      description: Will this regenerate `output/results.json` (breaking bit-parity)? Will it require a CHANGELOG entry under a new minor version?
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Anchor references (DOI mandatory when one exists)
+      description: One reference per line in AGTU author-date format with DOI.
+      render: text
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have read CONTRIBUTING.md and verified that this feature is not already implemented.
+          required: true
+        - label: If this feature touches the SHA-256 hash chain, I commit to updating `docs/hash-chain.md`, `output/experiment_provenance.json`, and `CHANGELOG.md` coherently.
+          required: true

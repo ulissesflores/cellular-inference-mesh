@@ -1,0 +1,94 @@
+name: Bug report
+description: Report a reproducibility failure, incorrect output, or unexpected behavior.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to file a bug report. This software is a
+        published scientific artifact under a SHA-256 hash chain — please be as
+        specific as possible so the maintainer can reproduce the failure.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One-sentence description of the bug.
+      placeholder: "pytest test_reproducibility fails with seed=42 on Python 3.14.4 / Ubuntu 24.04."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Minimal commands that exhibit the bug, starting from a fresh clone.
+      placeholder: |
+        git clone https://github.com/ulissesflores/cellular-inference-mesh.git
+        cd cellular-inference-mesh
+        python -m venv .venv && source .venv/bin/activate
+        pip install -e ".[dev]"
+        pytest -q
+      render: bash
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What you expected to happen, and against which reference (paper Table 2, docs/hash-chain.md, a specific test).
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      description: What actually happened. Paste exact error messages, stack traces, or output diffs.
+      render: text
+    validations:
+      required: true
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit SHA
+      description: Output of `git rev-parse HEAD`.
+      placeholder: "04132ce34abe7e4e06b7df6b401bb096c99d0a98"
+    validations:
+      required: true
+
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: "3.14.4"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: Operating system + architecture
+      placeholder: "Ubuntu 24.04, x86_64"
+    validations:
+      required: true
+
+  - type: textarea
+    id: hashes
+    attributes:
+      label: Local SHA-256 of canonical outputs
+      description: Output of `shasum -a 256 output/results.json output/raw_replicas.jsonl`.
+      render: text
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I have read CONTRIBUTING.md and verified the failure on a clean clone.
+          required: true
+        - label: I have not modified any file in `src/`, `output/`, or `docs/hash-chain.md` before reporting.
+          required: true

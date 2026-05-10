@@ -1,0 +1,46 @@
+{
+  "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+  "@type": "SoftwareSourceCode",
+  "identifier": "https://github.com/ulissesflores/cellular-inference-mesh",
+  "name": "cellular-inference-mesh",
+  "version": "0.3.0",
+  "description": "Salabim discrete-event simulation of edge-cloud LLM inference under PACELC saturation. Companion software to the Saturated Pipeline Conjecture (Flores, 2026).",
+  "license": "https://spdx.org/licenses/Apache-2.0",
+  "codeRepository": "https://github.com/ulissesflores/cellular-inference-mesh",
+  "issueTracker": "https://github.com/ulissesflores/cellular-inference-mesh/issues",
+  "programmingLanguage": "Python",
+  "runtimePlatform": "Python 3.14",
+  "operatingSystem": ["Linux", "macOS"],
+  "softwareRequirements": [
+    "salabim==26.0.5",
+    "numpy==2.4.4",
+    "scipy==1.17.1",
+    "matplotlib==3.10.9"
+  ],
+  "developmentStatus": "active",
+  "applicationCategory": "Scientific/Engineering",
+  "keywords": [
+    "cellular inference mesh",
+    "saturated pipeline conjecture",
+    "PACELC",
+    "edge-cloud LLM serving",
+    "FAIR research software"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Carlos Ulisses",
+      "familyName": "Flores",
+      "email": "c.ulisses@gmail.com",
+      "@id": "https://orcid.org/0000-0002-6034-7765",
+      "affiliation": {
+        "@type": "Person",
+        "name": "Independent researcher"
+      }
+    }
+  ],
+  "datePublished": "2026-05-09",
+  "dateModified": "2026-05-09",
+  "downloadUrl": "https://github.com/ulissesflores/cellular-inference-mesh/archive/refs/tags/v0.3.0.tar.gz",
+  "readme": "https://github.com/ulissesflores/cellular-inference-mesh/blob/main/README.md"
+}

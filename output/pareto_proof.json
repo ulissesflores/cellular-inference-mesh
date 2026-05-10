@@ -1,0 +1,274 @@
+{
+  "theorem": "Theorem - Pareto-optimality of the Cellular Inference Mesh composition",
+  "verification_date": "2026-05-10T09:57:37.404476+00:00",
+  "n_techniques": 9,
+  "n_subsets_enumerated": 512,
+  "n_subsets_valid": 256,
+  "n_subsets_invalid_no_t6": 256,
+  "score_baseline": {
+    "e1_p99_ms": 1740.0,
+    "e2_fallback_rate": 0.3,
+    "e3_cost_usd": 0.0809,
+    "e4_blast_radius": 0.25,
+    "e5_energy_J": 8.5
+  },
+  "score_full_composition": {
+    "e1_p99_ms": 364.512512826,
+    "e2_fallback_rate": 0.0225225,
+    "e3_cost_usd": 0.002608519375,
+    "e4_blast_radius": 0.03575,
+    "e5_energy_J": 2.87865165
+  },
+  "reductions_vs_baseline": {
+    "e1_p99_ms": 4.773498683241606,
+    "e2_fallback_rate": 13.320013320013318,
+    "e3_cost_usd": 31.01376235704594,
+    "e4_blast_radius": 6.993006993006993,
+    "e5_energy_J": 2.952771308747969
+  },
+  "dominators_of_full_composition": 0,
+  "theorem_verified": true,
+  "pareto_frontier_size": 1,
+  "full_in_pareto_frontier": true,
+  "sensitivity_analysis": {
+    "n_monte_carlo_realizations": 1000,
+    "perturbation_bounds": "Uniform[0.80, 1.25] multiplicative on f_ij < 1",
+    "realizations_robust": 1000,
+    "robust_fraction": 1.0,
+    "theorem_robust_to_pm20_perturbation": true
+  },
+  "empirical_comparison": {
+    "addverb_proposed_table_2": {
+      "p99_ms": 1576.0,
+      "fallback_rate": 0.0407,
+      "cost_usd": 0.00407,
+      "blast_radius": 0.0357
+    },
+    "ratio_empirical_vs_analytical": {
+      "e1_p99_ms": 4.323582715395846,
+      "e2_fallback_rate": 1.807081807081807,
+      "e3_cost_usd": 1.5602720988031764,
+      "e4_blast_radius": 0.9986013986013987
+    }
+  },
+  "techniques": [
+    "t1_multi_lora_federated",
+    "t2_kv_reduction_mla_sw_cla2",
+    "t3_speculative_entropy_gating",
+    "t4_pd_disaggregation",
+    "t5_cell_shuffle_sharding",
+    "t6_payload_gating_zero_trust",
+    "t7_p4_in_network_nlu",
+    "t8_cxl_kv_pool",
+    "t9_energy_aware_routing"
+  ],
+  "axes": [
+    "e1_p99_ms",
+    "e2_fallback_rate",
+    "e3_cost_usd",
+    "e4_blast_radius",
+    "e5_energy_J"
+  ],
+  "factor_matrix": [
+    [
+      1.0,
+      0.33,
+      0.5,
+      1.0,
+      1.0
+    ],
+    [
+      0.77,
+      1.0,
+      0.5,
+      1.0,
+      0.83
+    ],
+    [
+      0.83,
+      0.25,
+      0.25,
+      1.0,
+      0.67
+    ],
+    [
+      0.43,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      0.143,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      0.99,
+      1.0,
+      1.0,
+      1.0,
+      0.87
+    ],
+    [
+      0.77,
+      1.0,
+      0.67,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      0.91,
+      0.77,
+      1.0,
+      0.7
+    ]
+  ],
+  "external_architectures": {
+    "Splitwise_ISCA24": {
+      "score": [
+        1235.3999999999999,
+        0.3,
+        0.06472,
+        0.25,
+        8.5
+      ],
+      "modeling": "independent_factors_from_anchor_paper",
+      "factors_used": [
+        0.71,
+        1.0,
+        0.8,
+        1.0,
+        1.0
+      ],
+      "cim_pce_dominates": true,
+      "dominates_cim_pce": false,
+      "relation": "CIM-PCE DOMINATES"
+    },
+    "DistServe_OSDI24": {
+      "score": [
+        1479.0,
+        0.3,
+        0.06876499999999999,
+        0.25,
+        8.5
+      ],
+      "modeling": "independent_factors_from_anchor_paper",
+      "factors_used": [
+        0.85,
+        1.0,
+        0.85,
+        1.0,
+        1.0
+      ],
+      "cim_pce_dominates": true,
+      "dominates_cim_pce": false,
+      "relation": "CIM-PCE DOMINATES"
+    },
+    "Mooncake_FAST2025": {
+      "score": [
+        1566.0,
+        0.3,
+        0.060675,
+        0.25,
+        8.5
+      ],
+      "modeling": "independent_factors_from_anchor_paper",
+      "factors_used": [
+        0.9,
+        1.0,
+        0.75,
+        1.0,
+        1.0
+      ],
+      "cim_pce_dominates": true,
+      "dominates_cim_pce": false,
+      "relation": "CIM-PCE DOMINATES"
+    },
+    "Sarathi_Serve_OSDI24": {
+      "score": [
+        957.0000000000001,
+        0.3,
+        0.0809,
+        0.25,
+        8.5
+      ],
+      "modeling": "independent_factors_from_anchor_paper",
+      "factors_used": [
+        0.55,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cim_pce_dominates": true,
+      "dominates_cim_pce": false,
+      "relation": "CIM-PCE DOMINATES"
+    },
+    "vLLM_PagedAttention": {
+      "score": [
+        1479.0,
+        0.3,
+        0.06876499999999999,
+        0.25,
+        8.5
+      ],
+      "modeling": "independent_factors_from_anchor_paper",
+      "factors_used": [
+        0.85,
+        1.0,
+        0.85,
+        1.0,
+        1.0
+      ],
+      "cim_pce_dominates": true,
+      "dominates_cim_pce": false,
+      "relation": "CIM-PCE DOMINATES"
+    },
+    "EAGLE3_NeurIPS25": {
+      "score": [
+        267.6923076923077,
+        0.3,
+        0.0809,
+        0.25,
+        7.225
+      ],
+      "modeling": "independent_factors_from_anchor_paper",
+      "factors_used": [
+        0.15384615384615385,
+        1.0,
+        1.0,
+        1.0,
+        0.85
+      ],
+      "cim_pce_dominates": false,
+      "dominates_cim_pce": false,
+      "relation": "Pareto-INCOMPARABLE"
+    },
+    "Cellular_no_enablers_subset": {
+      "score": [
+        478.17461999999995,
+        0.02475,
+        0.00505625,
+        0.03575,
+        4.726850000000001
+      ],
+      "modeling": "transparent_subset_of_F_ij",
+      "factors_used": "subset_F_ij",
+      "cim_pce_dominates": true,
+      "dominates_cim_pce": false,
+      "relation": "CIM-PCE DOMINATES"
+    }
+  },
+  "theorem_1_extended_verified": true
+}
