@@ -7,9 +7,9 @@
   "doi_external": null,
   "external_repo_url": null,
   "publication_status": "local-only — explicit operator authorization is required for publication on Zenodo, public GitHub, or any external repository.",
-  "timestamp_utc": "2026-05-10T09:57:37.436251+00:00",
+  "timestamp_utc": "2026-05-10T10:16:36.321912+00:00",
   "seed_canonical": 42,
-  "git_commit_sha": "04132ce34abe7e4e06b7df6b401bb096c99d0a98",
+  "git_commit_sha": "9fc83a5d2752c8c628bac19eadee05b0f21ee75b",
   "package_versions": {
     "salabim": "26.0.5",
     "numpy": "2.4.4",

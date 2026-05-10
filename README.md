@@ -1,6 +1,6 @@
 # Cellular Inference Mesh
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.PLACEHOLDER.svg)](https://doi.org/10.5281/zenodo.PLACEHOLDER)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20108649.svg)](https://doi.org/10.5281/zenodo.20108649)
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue?logo=python&logoColor=white)](https://www.python.org/)
 [![Tests](https://img.shields.io/badge/tests-53%2F53_passing-brightgreen?logo=pytest&logoColor=white)](./tests)
@@ -189,8 +189,8 @@ If you use this software in research, please cite the software (this repo). The 
   month        = may,
   publisher    = {Zenodo},
   version      = {0.3.0},
-  doi          = {10.5281/zenodo.PLACEHOLDER},
-  url          = {https://doi.org/10.5281/zenodo.PLACEHOLDER},
+  doi          = {10.5281/zenodo.20108649},
+  url          = {https://doi.org/10.5281/zenodo.20108649},
   orcid        = {0000-0002-6034-7765}
 }
 ```

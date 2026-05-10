@@ -15,8 +15,8 @@ Source-of-truth for hashes: output/experiment_provenance.json (machine-readable)
 | Field | Value |
 |---|---|
 | Version | `0.3.0` |
-| Git snapshot | `04132ce34abe7e4e06b7df6b401bb096c99d0a98` |
-| Canonical regeneration timestamp (UTC) | `2026-05-10T09:57:37.436251+00:00` |
+| Git snapshot | `9fc83a5d2752c8c628bac19eadee05b0f21ee75b` |
+| Canonical regeneration timestamp (UTC) | `2026-05-10T10:16:36.321912+00:00` |
 | Author | Carlos Ulisses Flores ([ORCID 0000-0002-6034-7765](https://orcid.org/0000-0002-6034-7765)) |
 | License | Apache-2.0 |
 | Bit-parity status | ✅ verified — re-execution under `seed_canonical = 42` produces identical hashes |
@@ -136,13 +136,13 @@ Expected: 53 tests pass in ~5.5 s. The test `test_reproducibility` explicitly ve
 ## Reference Git snapshot
 
 ```text
-commit 04132ce34abe7e4e06b7df6b401bb096c99d0a98
+commit 9fc83a5d2752c8c628bac19eadee05b0f21ee75b
 ```
 
 This commit is the canonical truth point for version 0.3.0. To reproduce the exact snapshot that generated the hashes above:
 
 ```bash
-git checkout 04132ce34abe7e4e06b7df6b401bb096c99d0a98
+git checkout 9fc83a5d2752c8c628bac19eadee05b0f21ee75b
 ```
 
 Modifications after this commit do not invalidate the chain but produce different hashes. For academic citation, always pin to this commit (or the equivalent tagged release `v0.3.0`).

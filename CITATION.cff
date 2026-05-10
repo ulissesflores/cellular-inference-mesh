@@ -20,8 +20,9 @@ authors:
 version: "0.3.0"
 date-released: "2026-05-10"
 license: "Apache-2.0"
+doi: "10.5281/zenodo.20108649"
 repository-code: "https://github.com/ulissesflores/cellular-inference-mesh"
-url: "https://github.com/ulissesflores/cellular-inference-mesh"
+url: "https://doi.org/10.5281/zenodo.20108649"
 keywords:
   - "cellular inference mesh"
   - "saturated pipeline conjecture"
