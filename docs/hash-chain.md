@@ -14,9 +14,9 @@ Source-of-truth for hashes: output/experiment_provenance.json (machine-readable)
 
 | Field | Value |
 |---|---|
-| Version | `0.3.0` |
-| Git snapshot | `9fc83a5d2752c8c628bac19eadee05b0f21ee75b` |
-| Canonical regeneration timestamp (UTC) | `2026-05-10T10:16:36.321912+00:00` |
+| Version | `0.3.2` |
+| Git snapshot | `cce1ca67da36d12ff71c90ce65a6c2c6333bd71d` |
+| Canonical regeneration timestamp (UTC) | `2026-05-10T11:24:06.658742+00:00` |
 | Author | Carlos Ulisses Flores ([ORCID 0000-0002-6034-7765](https://orcid.org/0000-0002-6034-7765)) |
 | License | Apache-2.0 |
 | Bit-parity status | ✅ verified — re-execution under `seed_canonical = 42` produces identical hashes |
@@ -58,10 +58,10 @@ Defined in `src/main.py`. Each replica `i` uses an isolated `random.Random(42 + 
 
 | File | SHA-256 |
 |---|---|
-| `src/__init__.py` | `853fa8a3a13864bd64ac0a28ab11dd5a8fde69bb8f5825b66674f08e0597b05c` |
-| `src/config.py` | `d5fc99d25b838243f6b8725ca099b53c86b3a23e9cfca81d6c549ff6e6b1691e` |
-| `src/simulation.py` | `df7a401787f7e4da16501e291035f46215ad68ce5759ad234192eaa1c19a4336` |
-| `src/main.py` | `cd4e1eecfdff63b1ed67f21ae03e9eeb3f8fae9f72b0e9578c095eedb28d89d6` |
+| `src/__init__.py` | `526fcb02f629baa42dc9e6eb2382de9379aee789cd22c15db3bc1027e776be10` |
+| `src/config.py` | `3dba37a31fe43d77bff896aaa1c438328876fcefcb14068ddd23d7053ea56a2e` |
+| `src/simulation.py` | `e7ea20341b3314e7175cdab066089c9fbec255d34d7256f76790d62a6129b9b4` |
+| `src/main.py` | `4ce9046c6f1de871d1191327122d0da7573bad359d1b34535058d801773e6ed3` |
 | `src/report.py` | `6a050ada6b1289d39004bef12d9668d9cefe7370fab8551c3d362c3658fd2dcc` |
 
 ---
@@ -136,16 +136,16 @@ Expected: 53 tests pass in ~5.5 s. The test `test_reproducibility` explicitly ve
 ## Reference Git snapshot
 
 ```text
-commit 9fc83a5d2752c8c628bac19eadee05b0f21ee75b
+commit cce1ca67da36d12ff71c90ce65a6c2c6333bd71d
 ```
 
-This commit is the canonical truth point for version 0.3.0. To reproduce the exact snapshot that generated the hashes above:
+This commit is the canonical truth point for version 0.3.2. To reproduce the exact snapshot that generated the hashes above:
 
 ```bash
-git checkout 9fc83a5d2752c8c628bac19eadee05b0f21ee75b
+git checkout cce1ca67da36d12ff71c90ce65a6c2c6333bd71d
 ```
 
-Modifications after this commit do not invalidate the chain but produce different hashes. For academic citation, always pin to this commit (or the equivalent tagged release `v0.3.0`).
+Modifications after this commit do not invalidate the chain but produce different hashes. For academic citation, always pin to this commit (or the equivalent tagged release `v0.3.2`).
 
 ---
 
